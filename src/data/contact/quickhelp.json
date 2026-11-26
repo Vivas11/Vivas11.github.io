@@ -1,28 +1,61 @@
 {
   "sectionLabel": "Quick Contact",
-  "heading": "What are we discussing?",
-  "blurb": "Tell us in a few seconds. Select the topic below, provide your contact information, and we will follow up appropriately.",
-  "stepLabels": ["Select topic", "Your info"],
+  "heading": "How can I help?",
+  "blurb": "Pick a topic, leave your details and I'll get in touch.",
+  "stepLabels": [
+    "Pick a topic",
+    "Your info"
+  ],
   "services": [
-    { "label": "Acquisition",   "subLabel": "Deal sourcing & intake",      "serviceValue": "Acquisition Inquiry",     "iconKey": "search"     },
-    { "label": "Investor",      "subLabel": "LP & investor relations",      "serviceValue": "Investor Relations",      "iconKey": "chart"      },
-    { "label": "Operations",    "subLabel": "Portfolio company support",    "serviceValue": "Portfolio Operations",    "iconKey": "settings"   },
-    { "label": "Leadership",    "subLabel": "Management & transition",      "serviceValue": "Leadership Transition",   "iconKey": "person"     },
-    { "label": "Exit Planning", "subLabel": "Disposition & sale",          "serviceValue": "Portfolio Disposition",   "iconKey": "lightbulb2" },
-    { "label": "Other",         "subLabel": "General inquiry",              "serviceValue": "General Inquiry",         "iconKey": "list"       }
+    {
+      "label": "Website",
+      "subLabel": "Site or landing page",
+      "serviceValue": "Website",
+      "iconKey": "globe"
+    },
+    {
+      "label": "Web App",
+      "subLabel": "Custom web application",
+      "serviceValue": "Web Application",
+      "iconKey": "code"
+    },
+    {
+      "label": "Consulting",
+      "subLabel": "What my business needs",
+      "serviceValue": "Web Consulting",
+      "iconKey": "lightbulb2"
+    },
+    {
+      "label": "Improve My Site",
+      "subLabel": "Review of an existing site",
+      "serviceValue": "Site Improvement",
+      "iconKey": "settings"
+    },
+    {
+      "label": "Opportunity",
+      "subLabel": "Internship or job",
+      "serviceValue": "Job Opportunity",
+      "iconKey": "person"
+    },
+    {
+      "label": "Other",
+      "subLabel": "General inquiry",
+      "serviceValue": "General Inquiry",
+      "iconKey": "list"
+    }
   ],
   "formLabels": {
     "name": "Your Name",
     "email": "Email",
-    "namePlaceholder": "Name or Company",
-    "emailPlaceholder": "your_email@company.example"
+    "namePlaceholder": "Name or company",
+    "emailPlaceholder": "you@example.com"
   },
   "buttons": {
     "next": "Next",
     "back": "Back",
-    "submit": "Send It"
+    "submit": "Send"
   },
-  "footerNote": "Expect a confirmation and a response within one business day.",
+  "footerNote": "You'll get a confirmation, and I'll reply soon.",
   "successTitle": "Received.",
-  "successMessage": "Expect a response from our team to the email you provided."
+  "successMessage": "I'll reply to the email you provided."
 }

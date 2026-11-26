@@ -44,14 +44,14 @@ const projectsForScript = projectsData.map((p) => ({
     </div>
     <h2 id="projects-heading" class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wide mb-10" style="color: var(--color-text);">
       {featuredOnly
-        ? <>{pageData.featuredHeading} <span style="color: var(--color-primary);">{pageData.featuredAccent}</span></>
-        : <>{pageData.allHeading} <span style="color: var(--color-primary);">{pageData.allAccent}</span></>}
+        ? <>{pageData.featuredHeading}{' '}<span style="color: var(--color-primary);">{pageData.featuredAccent}</span></>
+        : <>{pageData.allHeading}{' '}<span style="color: var(--color-primary);">{pageData.allAccent}</span></>}
     </h2>
 
     {featuredOnly && (
       <div class="flex mb-8">
         <a href={withBase('/projects')} class="portfolio-link inline-flex items-center gap-2 text-xs font-mono">
-          View full portfolio →
+          {pageData.viewAllLabel} →
         </a>
       </div>
     )}
@@ -275,7 +275,7 @@ const projectsForScript = projectsData.map((p) => ({
         modalLink.href = p.link;
         if (p.link.includes('github.com'))  modalLinkTx.textContent = 'View on GitHub';
         else if (p.link.includes('gitlab')) modalLinkTx.textContent = 'View on GitLab';
-        else if (p.link.includes('blog'))   modalLinkTx.textContent = 'Read the Post';
+        else if (p.link.includes('itch.io')) modalLinkTx.textContent = 'View on itch.io';
         else                                modalLinkTx.textContent = 'View Project';
         modalLink.classList.remove('hidden');
         modalNoLink.classList.add('hidden');

@@ -1,86 +1,186 @@
 {
-  "pageTitle": "About Apex Capital Group",
-  "pageDescription": "Apex Capital Group is a private holding company that acquires, operates, and strategically exits businesses across multiple sectors. We deploy capital with discipline and manage operations with intention.",
-
+  "pageTitle": "About Me",
+  "pageDescription": "Luis Camilo Vivas Cruz, Systems Engineering student in Bogotá, Colombia. Web development, software engineering and games.",
   "contactBar": {
     "items": [
-      { "label": "IR Email",    "value": "ir@apexcap.example",   "href": "mailto:ir@apexcap.example" },
-      { "label": "Phone",       "value": "(000) 000-0000",         "href": "tel:+10000000000" },
-      { "label": "Location",    "value": "New York, New York",     "href": null }
+      {
+        "label": "Email",
+        "value": "lc.vivascruz@gmail.com",
+        "href": "mailto:lc.vivascruz@gmail.com"
+      },
+      {
+        "label": "Phone",
+        "value": "+57 315 448 2564",
+        "href": "tel:+573154482564"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "luis-camilo-vivas-cruz",
+        "href": "https://www.linkedin.com/in/luis-camilo-vivas-cruz-4a985435a"
+      },
+      {
+        "label": "GitHub",
+        "value": "Vivas11",
+        "href": "https://github.com/Vivas11"
+      },
+      {
+        "label": "Location",
+        "value": "Bogotá, Colombia",
+        "href": null
+      }
     ]
   },
-
   "paragraphs": [
-    "Apex Capital Group was formed to do one thing well: identify businesses with strong fundamentals and underutilized potential, acquire them, and make them perform. We are not a turnaround shop. We are not a strip-and-flip operation. We are operators who happen to own companies.",
-    "Our portfolio spans manufacturing, services, technology, media, and real estate. What these companies have in common is not their sector — it is the situation we found them in: ready for the next chapter, waiting for the right partner to write it.",
-    "We take board seats, we hire and replace leadership when necessary, we optimize costs without destroying culture, and we plan for exits from the day we close. This is not complicated. It is simply disciplined capital allocation paired with operational seriousness. Most people find that combination more rare than it should be."
+    "I'm Luis Camilo Vivas Cruz, a Systems Engineering student at Universidad El Bosque in Bogotá, Colombia, and a junior fullstack developer. I like turning ideas into digital solutions that work and are pleasant to use, and I'm always looking for chances to collaborate, keep learning and apply what I know to real projects.",
+    "I've built Java applications using the MVC design pattern, which gave me a solid base in clean code and software design principles. My biggest project so far is an Airbnb-style accommodation marketplace that we built as a team at university with Angular and Spring Boot. That's where I learned to work with Scrum, keep track of the work in Jira and Confluence, write requirements and user stories, draw diagrams, and keep code quality up with a continuous integration pipeline and SonarCloud.",
+    "I also completed a diploma in video game design and development at UdeCataluña, where I worked with Unity, C#, Blender and 2D animation and built a football game prototype in one month. I can also work with Godot. Today I'm looking for junior software engineering roles, and I offer web development and consulting to businesses and entrepreneurs who want a presence online."
   ],
-
-  "pillarsHeading": "What Apex Capital Does",
+  "pillarsHeading": "What I Do",
   "pillars": [
     {
-      "title": "Acquisition & Intake",
-      "desc": "Sourcing, diligence, deal structuring, and portfolio integration across sectors and transaction sizes.",
-      "icon": "building-office"
+      "title": "Web Development",
+      "desc": "Websites, landing pages and web applications with a frontend and REST API.",
+      "icon": "code-bracket"
     },
     {
-      "title": "Operational Efficiency",
-      "desc": "Post-close operational assessment, cost structure optimization, and KPI-driven performance management.",
-      "icon": "chart-bar-square"
+      "title": "Software Engineering",
+      "desc": "Requirements, user stories, diagrams and solution design.",
+      "icon": "document-text"
     },
     {
-      "title": "Portfolio Disposition",
-      "desc": "Exit strategy development, M&A advisory, buyer identification, and transaction management.",
-      "icon": "arrow-trending-up"
+      "title": "Teamwork",
+      "desc": "Scrum, sprint planning and tracking in Jira and Confluence.",
+      "icon": "users"
     },
     {
-      "title": "Leadership Transition",
-      "desc": "Executive assessment, onboarding, board governance, and stakeholder communication management.",
-      "icon": "user-plus"
+      "title": "Game Development",
+      "desc": "Game prototypes in Unity and C#, with Blender and 2D animation.",
+      "icon": "puzzle-piece"
     }
   ],
-
   "stats": [
-    { "value": "20+", "label": "Years Experience" },
-    { "value": "12+", "label": "Portfolio Companies" },
-    { "value": "5",   "label": "Active Sectors" },
-    { "value": "LLC", "label": "Apex Capital Group, LLC" }
+    {
+      "value": "2",
+      "label": "Projects"
+    },
+    {
+      "value": "Scrum",
+      "label": "Methodology"
+    },
+    {
+      "value": "Bogotá",
+      "label": "Colombia"
+    }
   ],
-
   "clientTypes": {
-    "eyebrow": "Who We Work With",
-    "heading": "Built for businesses at an inflection point.",
-    "body": "Our portfolio companies come to us through various paths — founder succession, corporate divestitures, distressed situations, and competitive acquisitions. What they share is a need for the right owner at the right time.",
+    "eyebrow": "Who I Work With",
+    "heading": "For people getting started on the web.",
+    "body": "I work with businesses and individuals who need a website or want to improve the one they have, and who prefer to talk directly with the person building it.",
     "items": [
-      { "label": "Family-Owned Businesses" },
-      { "label": "Corporate Divestitures" },
-      { "label": "Management Buyouts" },
-      { "label": "Distressed & Turnaround" },
-      { "label": "Founder Succession" },
-      { "label": "Secondary Buyouts" }
+      {
+        "label": "Entrepreneurs"
+      },
+      {
+        "label": "Small businesses"
+      },
+      {
+        "label": "Local businesses"
+      },
+      {
+        "label": "Freelancers"
+      }
     ]
   },
-
   "capabilitiesShowcase": {
-    "eyebrow": "Full Capabilities",
-    "heading": "What We Do.",
-    "subheading": "A cross-section of the disciplines we apply across every company in our portfolio. Click any card to read more."
+    "eyebrow": "Services",
+    "heading": "How I Can Help.",
+    "subheading": "A summary of what my services include. Click any card to read more."
   },
-
-  "techStackHeading": "Sectors we know well",
+  "techStackHeading": "Tools and Technologies",
   "techStackGroups": [
-    { "cat": "Manufacturing",   "items": ["Industrial Supply", "Food Processing", "Contract Manufacturing", "Light Assembly", "Co-Manufacturing", "Specialty Chemicals", "Metal Fabrication", "Plastics & Composites"] },
-    { "cat": "Services",        "items": ["Healthcare Staffing", "IT Services", "Field Services", "Business Process Outsourcing", "Environmental Services", "Facilities Management", "Professional Services"] },
-    { "cat": "Technology",      "items": ["SaaS", "Managed Services", "Enterprise Software", "IoT & Connected Devices", "Data & Analytics", "Digital Transformation", "Platform Businesses"] },
-    { "cat": "Distribution",    "items": ["Industrial Distribution", "Food & Beverage", "Last-Mile Logistics", "Third-Party Logistics", "Cold Chain", "E-commerce Fulfillment"] },
-    { "cat": "Real Estate",     "items": ["Light Industrial", "Flex Commercial", "Net Lease", "Sale-Leaseback", "Owner-User", "Development Land"] },
-    { "cat": "Media",           "items": ["Regional Publishing", "Digital Media", "Events & Conferences", "Trade Publications", "Newsletters", "Broadcast"] }
+    {
+      "cat": "Frontend",
+      "items": [
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "cat": "Backend",
+      "items": [
+        "Java",
+        "Spring Boot",
+        "Python",
+        "REST APIs",
+        "Maven",
+        "Stripe payments"
+      ]
+    },
+    {
+      "cat": "Databases",
+      "items": [
+        "PostgreSQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "cat": "Quality & DevOps",
+      "items": [
+        "Git & GitHub",
+        "GitHub Actions",
+        "SonarCloud",
+        "Docker"
+      ]
+    },
+    {
+      "cat": "Software Engineering",
+      "items": [
+        "Scrum",
+        "Jira",
+        "Confluence",
+        "MVC pattern",
+        "Requirements",
+        "User stories",
+        "Diagrams",
+        "API contracts"
+      ]
+    },
+    {
+      "cat": "Game Development",
+      "items": [
+        "Unity",
+        "C#",
+        "Godot",
+        "Blender",
+        "2D animation"
+      ]
+    }
   ],
-
   "cta": {
-    "heading": "Ready to discuss your company or investment thesis?",
-    "body": "We review all serious inquiries and respond to those that fit our mandate. If it fits, we move quickly.",
-    "label": "Contact Investor Relations →",
+    "heading": "Let's talk about your project",
+    "body": "Send me a message and I'll reply as soon as I can.",
+    "label": "Contact Me →",
     "href": "/contact"
-  }
+  },
+  "educationHeading": "Education & Certifications",
+  "education": [
+    {
+      "title": "Systems Engineering",
+      "org": "Universidad El Bosque",
+      "date": "In progress"
+    },
+    {
+      "title": "Diploma in Video Game Design and Development",
+      "org": "UdeCataluña",
+      "date": "Dec 2024 – May 2025"
+    },
+    {
+      "title": "Fundamentals of Programming with Python",
+      "org": "UdeCataluña · Certification",
+      "date": "Issued Apr 2025"
+    }
+  ]
 }

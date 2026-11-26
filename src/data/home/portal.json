@@ -1,28 +1,38 @@
 {
-  "sectionLabel": "Client Access",
-  "heading": "Partner",
-  "headingAccent": "Portal",
+  "sectionLabel": "About Me",
+  "heading": "Who",
+  "headingAccent": "I Am",
   "personalSiteCard": {
-    "label": "Secure Access",
-    "displayName": "client.apexcap.example",
-    "description": "Authorized clients and business partners access portfolio summaries, asset documentation, billing statements, and payment records through the secure client portal.",
-    "visitLabel": "Log in to Portal"
+    "label": "LinkedIn",
+    "displayName": "Luis Camilo Vivas Cruz",
+    "href": "https://www.linkedin.com/in/luis-camilo-vivas-cruz-4a985435a",
+    "description": "My professional profile, with my education and what I'm currently learning.",
+    "visitLabel": "View profile"
   },
   "quickStats": {
-    "label": "Portal Overview",
+    "label": "At a Glance",
     "items": [
-      { "key": "Asset Modules", "valueKey": "yearsExperience", "suffix": "" },
-      { "key": "Billing Cycles", "value": "Active" },
-      { "key": "Active Sectors", "value": "5" }
+      {
+        "key": "Projects",
+        "value": "2"
+      },
+      {
+        "key": "Methodology",
+        "value": "Scrum"
+      },
+      {
+        "key": "Open to",
+        "value": "Junior roles"
+      }
     ]
   },
   "infoLabels": {
-    "role": "Account Type",
-    "location": "Primary Jurisdiction",
-    "experience": "Relationship Status",
-    "experienceSuffix": " years on platform",
-    "education": "Entity Classification",
-    "blog": "Resource Library",
-    "contact": "Support Portal"
+    "role": "Profile",
+    "location": "Location",
+    "experience": "Focus",
+    "experienceValue": "Fullstack web development and games",
+    "education": "Education",
+    "blog": "GitHub",
+    "contact": "Email"
   }
 }

@@ -75,7 +75,7 @@
 :root {
   color-scheme: dark;
   --shadow-color: 0deg 0% 63%;
-  --cta-shadow-color: 84deg 55% 52%;
+  --cta-shadow-color: 182deg 65% 36%;
 
   /* ── Backgrounds (hex, for direct use) ── */
   --bg-base:     #040507;
@@ -96,12 +96,12 @@
   --bg-high-ch:     37 43 56;
 
   /* ── Brand / Primary ── */
-  --color-primary:      #C5A840;
-  --color-primary-dark: #A8902D;
-  --color-primary-light:#D4BC60;
-  --primary-ch:         197 168 64;
-  --primary-dark-ch:    168 144 45;
-  --primary-light-ch:   212 188 96;
+  --color-primary:      #209699;
+  --color-primary-dark: #187375;
+  --color-primary-light:#3DB5B8;
+  --primary-ch:         32 150 153;
+  --primary-dark-ch:    24 115 117;
+  --primary-light-ch:   61 181 184;
 
   /* ── Text ── */
   --color-text:        #f0f4f8;
@@ -176,12 +176,12 @@ html.light-mode {
   --bg-raised-ch:   232 237 242;
   --bg-high-ch:     226 232 240;
 
-  --color-primary:       #A8902D;
-  --color-primary-dark:  #8C7620;
-  --color-primary-light: #C5A840;
-  --primary-ch:          168 144 45;
-  --primary-dark-ch:     140 118 32;
-  --primary-light-ch:    197 168 64;
+  --color-primary:       #187375;
+  --color-primary-dark:  #125759;
+  --color-primary-light: #209699;
+  --primary-ch:          24 115 117;
+  --primary-dark-ch:     18 87 89;
+  --primary-light-ch:    32 150 153;
 
   --color-text:        #1a1d24;
   --color-text-muted:  #374151;

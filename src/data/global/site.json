@@ -1,24 +1,26 @@
 {
-  "name": "Apex Capital Group",
-  "legalName": "Apex Capital Group, LLC",
-  "url": "https://www.apexcap.example",
-  "email": "ir@apexcap.example",
-  "phone": "+10000000000",
-  "phoneDisplay": "(000) 000-0000",
-  "description": "Apex Capital Group is a private holding company that acquires, optimizes, and strategically divests portfolio companies across multiple sectors. We deploy capital with conviction and manage operations to peak performance.",
-  "web3formsKey": "1b19867d-e976-4774-bf0d-b983b230d87f",
+  "name": "Luis Camilo Vivas Cruz",
+  "legalName": "Luis Camilo Vivas Cruz",
+  "url": "https://vivas11.github.io",
+  "email": "lc.vivascruz@gmail.com",
+  "phone": "+573154482564",
+  "phoneDisplay": "+57 315 448 2564",
+  "description": "Portfolio of Luis Camilo Vivas Cruz, a junior fullstack developer and Systems Engineering student in Bogotá, Colombia. Web development, web consulting and game development.",
+  "web3formsKey": "c4d43cf9-72da-401b-a158-93d0c2faabbc",
   "twitter": "",
-  "founderName": "Apex Capital Group",
-  "addressLocality": "New York",
-  "addressRegion": "NY",
-  "logoText": "APEX",
-  "logoShort": "A",
-  "sameAs": [],
+  "founderName": "Luis Camilo Vivas Cruz",
+  "addressLocality": "Bogotá",
+  "addressRegion": "Bogotá D.C.",
+  "addressCountry": "CO",
+  "logoText": "VIVAS",
+  "logoShort": "V",
+  "sameAs": [
+    "https://www.linkedin.com/in/luis-camilo-vivas-cruz-4a985435a",
+    "https://github.com/Vivas11",
+    "https://vivas111.itch.io"
+  ],
   "serviceTypes": [
-    "Business Acquisition",
-    "Operational Optimization",
-    "Portfolio Management",
-    "Strategic Divestiture",
-    "Executive Transition Management"
+    "Web Development",
+    "Web Consulting"
   ]
 }

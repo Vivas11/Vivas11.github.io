@@ -1,15 +1,15 @@
 {
-  "name": "The Leadership Team",
-  "title": "Managing Partners & Operating Executives",
-  "email": "ir@apexcap.example",
-  "location": "New York, New York",
-  "linkedin": "apex-capital-group",
-  "github": "",
-  "education": "Combined +40 Years Capital Markets & Operations Experience",
-  "yearsExperience": "20+",
-  "personal_url": "https://apexcap.example",
-  "apex_url": "https://apexcap.example",
-  "apex_email": "ir@apexcap.example",
-  "blog_url": "https://apexcap.example/blog",
-  "aboutLong": "Apex Capital Group is a private holding company focused on the disciplined acquisition and optimization of operating businesses. We identify companies with durable fundamentals that benefit from strategic capital injection and operational expertise. Our portfolio spans multiple sectors with a unified mandate: generate superior risk-adjusted returns for investors while building companies that outlast the deal."
+  "name": "Luis Camilo Vivas Cruz",
+  "title": "Fullstack Developer · Systems Engineering Student",
+  "email": "lc.vivascruz@gmail.com",
+  "location": "Bogotá, Colombia",
+  "linkedin": "luis-camilo-vivas-cruz-4a985435a",
+  "github": "Vivas11",
+  "education": "Systems Engineering · Universidad El Bosque (in progress)",
+  "yearsExperience": "",
+  "personal_url": "https://vivas11.github.io",
+  "itch_url": "https://vivas111.itch.io",
+  "github_url": "https://github.com/Vivas11",
+  "linkedin_url": "https://www.linkedin.com/in/luis-camilo-vivas-cruz-4a985435a",
+  "aboutLong": "I'm a Systems Engineering student at Universidad El Bosque in Bogotá and a junior fullstack developer. I like turning ideas into digital solutions that work and look good. I've built Java applications using the MVC pattern, worked on a team with Scrum, Jira, Confluence and SonarCloud to build an accommodation marketplace, and made my first game prototype in Unity during a diploma in video game design and development."
 }

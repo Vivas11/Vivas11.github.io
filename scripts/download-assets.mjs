@@ -301,12 +301,7 @@ async function ensureIcons() {
 // Paths are relative to public/. URLs must be pinned to a specific version so the
 // cached file stays valid until the entry is updated here.
 
-const EXTERNAL_SCRIPTS = [
-  {
-    url: 'https://cdn.jsdelivr.net/npm/three/build/three.min.js',
-    dest: 'scripts/three.min.js',
-  },
-];
+const EXTERNAL_SCRIPTS = [];
 
 async function ensureScripts() {
   const missing = EXTERNAL_SCRIPTS.filter(({ dest }) => !existsSync(join(PUBLIC, dest)));

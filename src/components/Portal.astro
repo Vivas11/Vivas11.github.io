@@ -65,7 +65,7 @@ import { icons } from '../lib/icons';
               </div>
               <div>
                 <p class="text-[10px] font-mono font-semibold uppercase tracking-[2px] text-site-muted mb-1">{portalData.infoLabels.experience}</p>
-                <p class="text-sm text-site-text font-medium">{personalData.yearsExperience}{portalData.infoLabels.experienceSuffix}</p>
+                <p class="text-sm text-site-text font-medium leading-snug">{portalData.infoLabels.experienceValue}</p>
               </div>
             </div>
 
@@ -83,14 +83,14 @@ import { icons } from '../lib/icons';
             <!-- IR Communications -->
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style="background: rgb(var(--primary-ch) / 0.08); border: 1px solid rgb(var(--primary-ch) / 0.15);">
-                <svg aria-hidden="true" class="w-5 h-5" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" set:html={icons['book-open']} />
+                <svg aria-hidden="true" class="w-5 h-5" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 24 24" set:html={icons['github']} />
               </div>
               <div>
                 <p class="text-[10px] font-mono font-semibold uppercase tracking-[2px] text-site-muted mb-1">{portalData.infoLabels.blog}</p>
-                <a href={personalData.blog_url} target="_blank" rel="noopener noreferrer"
+                <a href={personalData.github_url} target="_blank" rel="noopener noreferrer"
                   class="text-sm font-mono transition-colors hover:underline" style="color: var(--color-primary);"
-                  aria-label={`${siteData.name} Blog (opens in new tab)`}>
-                  {siteData.name} Blog
+                  aria-label={`${siteData.name} on GitHub (opens in new tab)`}>
+                  github.com/{personalData.github}
                 </a>
               </div>
             </div>
@@ -118,13 +118,15 @@ import { icons } from '../lib/icons';
 
         <!-- IR contact card -->
         <a
-          href={`mailto:${siteData.email}`}
+          href={portalData.personalSiteCard.href}
+          target="_blank"
+          rel="noopener noreferrer"
           class="group flex flex-col p-6 border rounded-xl bg-site-surface/20 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-site-surface/40"
           style="border-color: rgb(var(--primary-ch) / 0.2);"
         >
           <div class="flex items-center gap-3 mb-3">
             <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgb(var(--primary-ch) / 0.12); border: 1px solid rgb(var(--primary-ch) / 0.2);">
-              <svg aria-hidden="true" class="w-4 h-4" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" set:html={icons['envelope']} />
+              <svg aria-hidden="true" class="w-4 h-4" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 24 24" set:html={icons['linkedin']} />
             </div>
             <span class="text-[10px] font-mono font-semibold uppercase tracking-[2px] text-site-muted">{portalData.personalSiteCard.label}</span>
           </div>
@@ -148,9 +150,7 @@ import { icons } from '../lib/icons';
                 <div class="flex justify-between items-center">
                   <span class="text-xs text-site-muted font-mono">{item.key}</span>
                   <span class="text-sm font-bold font-mono" style="color: var(--color-primary);">
-                    {'value' in item
-                      ? item.value
-                      : (personalData as any)[item.valueKey] + (item.suffix ?? '')}
+                    {item.value}
                   </span>
                 </div>
               </>

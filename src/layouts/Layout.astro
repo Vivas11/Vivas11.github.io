@@ -28,52 +28,26 @@ const fullTitle = title === siteData.name ? title : `${title} | ${siteData.name}
 
 const siteOrigin = Astro.site?.origin ?? siteData.url;
 const resolvedOgImage = ogImage ?? `${siteOrigin}/images/favicons/android-chrome-512x512.png`;
-const ogImageAlt = `${siteData.name} — Private Holding Company`;
+const ogImageAlt = `${siteData.name} — Portfolio`;
 
 const defaultSchema = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${siteData.url}/#business`,
-      name: siteData.name,
-      legalName: siteData.legalName,
-      description: description,
-      url: siteData.url,
-      telephone: siteData.phone,
-      email: siteData.email,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: siteData.addressLocality,
-        addressRegion: siteData.addressRegion,
-        addressCountry: "US",
-      },
-      areaServed: {
-        "@type": "State",
-        name: "Colorado",
-      },
-      founder: { "@id": `${siteData.url}/#founder` },
-      sameAs: siteData.sameAs,
-      serviceType: siteData.serviceTypes,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteOrigin}/images/favicons/android-chrome-512x512.png`,
-        width: 512,
-        height: 512,
-      },
-      image: `${siteOrigin}/images/favicons/android-chrome-512x512.png`,
-    },
-    {
-      "@type": "Person",
-      "@id": `${siteData.url}/#founder`,
-      name: siteData.founderName,
-      email: siteData.email,
-      url: siteData.url,
-      jobTitle: "Founder",
-      worksFor: { "@id": `${siteData.url}/#business` },
-      sameAs: siteData.sameAs,
-    },
-  ],
+  "@type": "Person",
+  "@id": `${siteData.url}/#person`,
+  name: siteData.name,
+  jobTitle: "Systems Engineering Student",
+  description: description,
+  url: siteData.url,
+  email: `mailto:${siteData.email}`,
+  ...(siteData.phone ? { telephone: siteData.phone } : {}),
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: siteData.addressLocality,
+    addressRegion: siteData.addressRegion,
+    addressCountry: siteData.addressCountry,
+  },
+  knowsAbout: siteData.serviceTypes,
+  sameAs: siteData.sameAs,
 };
 
 const schemaData = schema || defaultSchema;
@@ -84,12 +58,6 @@ function safeJsonLd(obj: Record<string, unknown>): string {
 ---
 
 <!doctype html>
-<!--!
-
-  This is the Apex Capital Group holding company site.
-  We are a real and real serious financial firm. :-D
-
--->
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -98,11 +66,10 @@ function safeJsonLd(obj: Record<string, unknown>): string {
     <meta name="robots" content="index, follow" />
     <meta name="author" content={siteData.founderName} />
     <meta name="application-name" content={siteData.name} />
-    <meta name="theme-color" content="#0a1628" />
+    <meta name="theme-color" content="#209699" />
     <meta name="color-scheme" content="dark" />
-    <meta name="geo.region" content={`US-${siteData.addressRegion}`} />
-    <meta name="geo.placename" content={`${siteData.addressLocality}, ${siteData.addressRegion}`} />
-    <meta name="contact" content={siteData.email} />
+    <meta name="geo.region" content="CO-DC" />
+    <meta name="geo.placename" content={`${siteData.addressLocality}, Colombia`} />
     <link rel="canonical" href={canonicalURL} />
     <!-- Astro Fonts API: self-hosted Inter + Oswald, downloaded at build time.
          No explicit preload — <ClientRouter /> re-emits preload tags on every
@@ -171,22 +138,10 @@ function safeJsonLd(obj: Record<string, unknown>): string {
     </script>
 
     <script is:inline>
-      if (!window.__apexBannerShown) {
-        window.__apexBannerShown = true;
-        var art = [
-      '    #    ',
-      '  #####  ',
-      ' #  #  # ',
-      ' #  #    ',
-      '  #####  ',
-      '    #  # ',
-      ' #  #  # ',
-      '  #####  ',
-      '    #    ',
-        ].join('\n');
-        console.log('%c' + art, 'color:#C5A840;font-family:monospace;font-size:11px;line-height:1.4;');
-        console.log('%c Greetings.', 'color:#ffffff;font-weight:bold;font-size:14px;');
-        console.log('%cApex Capital Group — Private Holding Company\nInvestor relations: ir@apexcap.example', 'color:#94a3b8;font-size:12px;');
+      if (!window.__bannerShown) {
+        window.__bannerShown = true;
+        console.log('%cHi there! 👋', 'color:#209699;font-weight:bold;font-size:14px;');
+        console.log('%cLuis Camilo Vivas Cruz — Systems Engineering Student\nhttps://github.com/Vivas11', 'color:#94a3b8;font-size:12px;');
       }
     </script>
 

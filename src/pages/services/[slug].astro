@@ -4,7 +4,12 @@ import Footer from "@/components/Footer.astro";
 import servicesData from "@/data/services/services.json";
 import { withBase } from "@/lib/assetPath";
 
-const service = servicesData.find((s) => s.slug === "acquisition-intake")!;
+export function getStaticPaths() {
+  return servicesData.map((service) => ({ params: { slug: service.slug }, props: { service } }));
+}
+
+const { service } = Astro.props;
+const stageX = [70, 217, 363, 510];
 ---
 
 <Layout
@@ -19,7 +24,7 @@ const service = servicesData.find((s) => s.slug === "acquisition-intake")!;
           <li class="text-site-border">/</li>
           <li><a href={withBase('/services')} class="hover:text-white transition-colors">Services</a></li>
           <li class="text-site-border">/</li>
-          <li class={service.theme.accent}>Acquisition & Intake</li>
+          <li class={service.theme.accent}>{service.title}</li>
         </ol>
       </nav>
 
@@ -33,7 +38,7 @@ const service = servicesData.find((s) => s.slug === "acquisition-intake")!;
         </p>
       </div>
 
-      <!-- Deal pipeline visual -->
+      <!-- Process pipeline visual -->
       <div class="mb-12 rounded-2xl border border-site-border bg-navy-800/80 overflow-hidden">
         <div class="flex items-center justify-between px-4 py-3 bg-navy-950/60 border-b border-site-border">
           <div class="flex items-center gap-1.5">
@@ -42,10 +47,10 @@ const service = servicesData.find((s) => s.slug === "acquisition-intake")!;
             <span class="inline-flex items-center justify-center w-4 h-3 text-[9px] leading-none text-site-muted/50 border border-site-muted/20 rounded-[2px] font-mono select-none">×</span>
           </div>
           <div class="text-[10px] font-mono uppercase tracking-[0.25em] text-site-muted hidden sm:block">
-            Deal Flow · Pipeline
+            {service.pipeline.label}
           </div>
           <div class="flex items-center gap-1.5 font-mono text-[10px] text-site-muted/60">
-            <span>deal-room/pipeline</span>
+            <span>{service.pipeline.path}</span>
           </div>
         </div>
 
@@ -58,37 +63,16 @@ const service = servicesData.find((s) => s.slug === "acquisition-intake")!;
               <animate attributeName="stroke-dashoffset" values="440;0;440" dur="5s" repeatCount="indefinite" calcMode="linear"/>
             </line>
 
-            <!-- Stage 1: Sourcing -->
-            <circle cx="70" cy="46" r="20" fill="rgba(4,10,24,0.96)" stroke-width="1.5" style="stroke: var(--color-primary);"/>
-            <circle cx="70" cy="46" r="20" fill="none" stroke-width="1" style="stroke: var(--color-primary);" opacity="0">
-              <animate attributeName="r" values="20;34;20" dur="3.5s" begin="0s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.35;0;0.35" dur="3.5s" begin="0s" repeatCount="indefinite"/>
-            </circle>
-            <text x="70" y="82" text-anchor="middle" fill="rgba(145,165,195,0.75)" font-family="monospace" font-size="9" letter-spacing="0.3">SOURCING</text>
-
-            <!-- Stage 2: Diligence -->
-            <circle cx="217" cy="46" r="20" fill="rgba(4,10,24,0.96)" stroke-width="1.5" style="stroke: var(--color-primary); opacity: 0.7;"/>
-            <circle cx="217" cy="46" r="20" fill="none" stroke-width="1" style="stroke: var(--color-primary);" opacity="0">
-              <animate attributeName="r" values="20;34;20" dur="3.5s" begin="1s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.35;0;0.35" dur="3.5s" begin="1s" repeatCount="indefinite"/>
-            </circle>
-            <text x="217" y="82" text-anchor="middle" fill="rgba(145,165,195,0.75)" font-family="monospace" font-size="9" letter-spacing="0.3">DILIGENCE</text>
-
-            <!-- Stage 3: Structure -->
-            <circle cx="363" cy="46" r="20" fill="rgba(4,10,24,0.96)" stroke-width="1.5" style="stroke: var(--color-primary); opacity: 0.7;"/>
-            <circle cx="363" cy="46" r="20" fill="none" stroke-width="1" style="stroke: var(--color-primary);" opacity="0">
-              <animate attributeName="r" values="20;34;20" dur="3.5s" begin="2s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.35;0;0.35" dur="3.5s" begin="2s" repeatCount="indefinite"/>
-            </circle>
-            <text x="363" y="82" text-anchor="middle" fill="rgba(145,165,195,0.75)" font-family="monospace" font-size="9" letter-spacing="0.3">STRUCTURE</text>
-
-            <!-- Stage 4: Close -->
-            <circle cx="510" cy="46" r="20" fill="rgba(4,10,24,0.96)" stroke-width="1.5" style="stroke: var(--color-primary); opacity: 0.7;"/>
-            <circle cx="510" cy="46" r="20" fill="none" stroke-width="1" style="stroke: var(--color-primary);" opacity="0">
-              <animate attributeName="r" values="20;34;20" dur="3.5s" begin="3s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.35;0;0.35" dur="3.5s" begin="3s" repeatCount="indefinite"/>
-            </circle>
-            <text x="510" y="82" text-anchor="middle" fill="rgba(145,165,195,0.75)" font-family="monospace" font-size="9" letter-spacing="0.3">CLOSE</text>
+            {service.pipeline.stages.map((stage, i) => (
+              <>
+                <circle cx={stageX[i]} cy="46" r="20" fill="rgba(4,10,24,0.96)" stroke-width="1.5" style={`stroke: var(--color-primary);${i > 0 ? ' opacity: 0.7;' : ''}`}/>
+                <circle cx={stageX[i]} cy="46" r="20" fill="none" stroke-width="1" style="stroke: var(--color-primary);" opacity="0">
+                  <animate attributeName="r" values="20;34;20" dur="3.5s" begin={`${i}s`} repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="0.35;0;0.35" dur="3.5s" begin={`${i}s`} repeatCount="indefinite"/>
+                </circle>
+                <text x={stageX[i]} y="82" text-anchor="middle" fill="rgba(145,165,195,0.75)" font-family="monospace" font-size="9" letter-spacing="0.3">{stage}</text>
+              </>
+            ))}
 
             <!-- Traveling dot -->
             <circle r="8" style="fill: var(--color-primary);" opacity="0">

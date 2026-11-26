@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Our Disciplines",
-  "pageDescription": "Apex Capital Group operating disciplines: acquisition & intake, operational efficiency, portfolio disposition, and leadership transition.",
-  "heading": "Our Disciplines",
-  "subHeading": "Four things we do, done well, across every company in our portfolio. Not glamorous. Effective.",
+  "pageTitle": "Services",
+  "pageDescription": "offers web development and web consulting for businesses and entrepreneurs.",
+  "heading": "Services",
+  "subHeading": "What I can do for your business or project.",
   "learnMoreLabel": "Learn more →",
-  "componentEyebrow": "Our Disciplines",
-  "componentHeading": "How We Operate",
-  "componentBlurb": "Four disciplines applied across every portfolio company. Click any to learn more — or <a href=\"#quick-help\">contact us</a> if you have a more immediate situation."
+  "componentEyebrow": "Services",
+  "componentHeading": "How I Can Help",
+  "componentBlurb": "Click a service for details, or <a href=\"#quick-help\">message me</a> directly."
 }

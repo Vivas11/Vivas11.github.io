@@ -233,7 +233,7 @@ const featuredProjects = projectsData.filter((p: any) => p.featuredImage && type
     if (slideCta) {
       slideCta.textContent = '';
       if (p.link) {
-        const label = p.link.includes('github.com') ? 'View on GitHub' : p.link.includes('gitlab') ? 'View on GitLab' : p.link.includes('blog') ? 'Read Post' : 'View Project';
+        const label = p.link.includes('github.com') ? 'View on GitHub' : p.link.includes('gitlab') ? 'View on GitLab' : p.link.includes('itch.io') ? 'View on itch.io' : 'View Project';
         const a = document.createElement('a');
         a.href = p.link;
         a.target = '_blank';
