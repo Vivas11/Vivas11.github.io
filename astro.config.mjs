@@ -59,7 +59,7 @@ export default defineConfig({
   // VERCEL_URL is injected automatically by Vercel on every deployment and lets
   // the Font API (which requires an absolute site URL) work even when SITE_URL
   // is not explicitly configured.
-  site: 'https://Vivas11.github.io',
+  site: 'https://vivas11.github.io',
   base: process.env.BASE_PATH || '/',
   trailingSlash: 'never',
   output: 'static',
